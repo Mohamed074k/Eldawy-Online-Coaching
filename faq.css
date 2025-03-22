@@ -88,13 +88,11 @@ body {
     transform: translateY(-20px);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     color: #ffffff;
-    
 }
 
 .faq-answer p {
     padding: 1rem;
     text-align: right;
-    
 }
 
 .faq-item.active .toggle-icon {

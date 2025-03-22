@@ -1,0 +1,100 @@
+/* Mission section styles */
+.mission-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .mission-text {
+    flex: 1;
+
+  }
+  .mission h2{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    /* color: var(--text-white); */
+  }
+  
+  
+  .mission-text p {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-family: "Delius", serif;
+    font-weight: 600;
+    font-style:normal;
+    font-size: large;
+  }
+
+  .mission-photo {
+    flex: 1;
+    position: relative;
+    margin-left: 98px;
+    margin-top: 95px;  
+}
+  .mission-photo img{
+    position: relative;
+    width: 80%;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 
+    0 0 10px #0ff, 
+    0 0 20px #0ff, 
+    0 0 40px #0ff, 
+    0 0 80px rgba(0, 255, 255, 0.6);
+animation: heartbeat 5s infinite; /* Add pulse animation */
+transition: transform 0.3s ease;
+}
+@keyframes heartbeat {
+  0% {
+      box-shadow: 
+          0 -5px 20px #111111, /* Top glow */
+          5px 0 20px #cc5500,  /* Right glow */
+          0 5px 20px #111111,  /* Bottom glow */
+          -5px 0 20px #cc5500; /* Left glow */
+  }
+  25% {
+      box-shadow: 
+          0 -10px 30px #111111, /* Top glow */
+          10px 0 30px #cc5500, /* Right glow */
+          0 10px 30px #111111, /* Bottom glow */
+          -10px 0 30px #cc5500; /* Left glow */
+  }
+  50% {
+      box-shadow: 
+          0 -5px 20px #111111, /* Top glow */
+          5px 0 20px #cc5500, /* Right glow */
+          0 5px 20px #111111, /* Bottom glow */
+          -5px 0 20px #cc5500; /* Left glow */
+  }
+  75% {
+      box-shadow: 
+          0 -10px 30px #111111, /* Top glow */
+          10px 0 30px #cc5500, /* Right glow */
+          0 10px 30px #111111, /* Bottom glow */
+          -10px 0 30px #cc5500; /* Left glow */
+  }
+  100% {
+      box-shadow: 
+          0 -5px 20px #111111, /* Top glow */
+          5px 0 20px #cc5500, /* Right glow */
+          0 5px 20px #111111, /* Bottom glow */
+          -5px 0 20px #cc5500; /* Left glow */
+  }
+}
+  
+  @media (max-width: 768px) {
+    .mission-content {
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+    .mission h2{
+      /* font-size: 2rem; */
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+    .mission-photo {
+      margin-top: 0;
+        margin-left: 4rem;
+      }
+  }

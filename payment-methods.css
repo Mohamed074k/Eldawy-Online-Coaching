@@ -1,0 +1,192 @@
+/* Payment Methods Section Styles */
+.payment-methods {
+    padding: 4rem 2rem;
+    background-color: var(--bg-black);
+}
+
+.section-title {
+    text-align: center;
+    color: var(--text-white);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+.section-title span {
+    color: var(--primary-color);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.payment-card {
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.insat-pay{
+    background-color: rgb(88 28 135 / .8);
+}
+.insat-pay p{
+    background-color: var(--text-white);
+    border-radius: .4rem;
+    color: rgb(88 28 135 / .8);
+}
+.insat-pay h2{
+    color: var(--text-white);
+}
+.insat-pay .contact-btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--text-white);
+}
+.insat-pay .contact-btn:hover{
+    background-color: rgb(88 28 135 / 1.5);
+}
+.vodafone{
+    background-color: rgba(199, 18, 18, 0.9);
+}
+.vodafone p{
+    background-color: var(--text-white);
+    border-radius: .4rem;
+    color: rgba(199, 18, 18, 0.9);
+}
+.vodafone .contact-btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--text-white);
+}
+.vodafone .contact-btn:hover{
+    background-color: rgba(199, 18, 18, 1.5);
+}
+.vodafone h2{
+    color: var(--text-white);
+}
+.bank-misr{
+    background-color:rgb(135 51 61 / .8);
+}
+.bank-misr p{
+    background-color: var(--text-white);
+    border-radius: .4rem;
+    color: rgb(135 51 61 / .8);
+}
+.bank-misr h2{
+    color: var(--text-white);
+}
+.bank-misr .contact-btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--text-white);
+}
+.bank-misr .contact-btn:hover{
+    background-color: rgbrgb(135 51 61 / 1.5);
+}
+.western-union{
+    background-color:var(--bg-dark);
+}
+.western-union p{
+    background-color: rgba(255, 255, 0, 0.801);
+    border-radius: .4rem;
+    color: var(--bg-dark);
+}
+.western-union h2{
+    color: rgba(255, 255, 0, 0.801);
+}
+.western-union .contact-btn{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--text-white);
+}
+.western-union .contact-btn:hover{
+    background-color: rgb(17 17 17 / 1.5);
+}
+
+
+.payment-card:hover {
+    transform: translateY(-5px);
+}
+
+.payment-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+}
+
+.payment-title {
+    color: #1e293b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.payment-info {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+
+
+
+/* Main content styles */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f3f4f6;
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start hidden */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Smooth transitions */
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}

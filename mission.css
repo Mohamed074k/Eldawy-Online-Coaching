@@ -1,0 +1,84 @@
+/* Mission section styles */
+.mission-content {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .mission-text {
+    flex: 1;
+  }
+  
+  .mission-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+  }
+  
+  .mission-text p {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style:normal;
+  }
+  .mission-text .btn{
+    color: var(--primary-color);
+     text-decoration: none;
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    font-size: 13px;
+    margin-top: 1.3rem;
+    cursor: pointer;
+     background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    font-family: "Delius", serif;
+      font-weight: 600;
+      font-style:normal;
+  }
+  .mission-text .btn:hover{
+    color: white;
+  }
+  .mission-text .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--primary-color);
+    z-index: -1;
+    transition: all 1s;
+  }
+  .mission-text .btn:hover::before {
+    width: 160%;
+  }
+  
+  
+  .mission-photo {
+    flex: 1;
+    position: relative;
+  }
+  .mission-photo img{
+    position: relative;
+    width: 90%;
+    border-radius: 1rem;
+    object-fit: cover;
+    height: 37rem;
+    transition: transform 0.5s ease-in-out; /* Smooth zoom effect */
+  }
+  .mission-photo:hover img{
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .mission-content {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+
+  

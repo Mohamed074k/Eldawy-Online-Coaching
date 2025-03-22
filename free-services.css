@@ -1,0 +1,133 @@
+:root {
+    --primary-color: rgb(234 88 12);
+    --primary-hover: #cc5500;
+    --bg-color: #f5f5f5;
+    --card-bg: #ffffff;
+    --text-color: #213547;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --bg-dark: #111111;
+    --bg-darker: #1a1a1a;
+    --bg-black: #000000;
+    --text-white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+ 
+  
+  .calculator-container {
+    background-color: var(--bg-darker);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    width: 100%;
+    justify-content: center;
+    max-width: 500px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--text-white);
+    margin-bottom: 0rem;
+    margin-top: 5rem;
+    font-size: 3rem;
+    padding-top: 25px;
+  }
+  h1 span {
+    color: var(--primary-color);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  .calculate-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Delius", serif;
+    font-weight: 600;
+    font-style:normal;
+  }
+  
+  .calculate-btn:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  .result {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--bg-dark);
+    text-align: center;
+    font-weight: 500;
+    display: none;
+  }
+  
+  .result.show {
+    display: block;
+  }
+  
+  @media (max-width: 480px) {
+    .calculator-container {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      padding: 25px;
+    }
+  
+    input,
+    select,
+    .calculate-btn {
+      padding: 0.6rem;
+    }
+  }

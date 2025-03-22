@@ -1,0 +1,75 @@
+/* Transformations section styles
+.transformations {
+    overflow: hidden;
+    background-color: var(--bg-dark);
+  }
+  
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .slide img {
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  */
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-transformations {
+    width: 100%;
+    overflow: hidden;
+    background: var(--bg-dark);
+}
+.slider-transformations h2 {
+padding-top: 2rem;
+    text-align: center;
+}
+marquee {
+    padding: 2rem 0;
+}
+
+.image-group {
+    display: flex;
+    gap: 1rem;
+    padding: 0 0.5rem;
+}
+
+.image-group img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-group img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-group img {
+        width: 250px;
+        height: 250px;
+    }
+}
